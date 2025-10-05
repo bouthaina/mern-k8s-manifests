@@ -1,0 +1,11 @@
+
+name: frontend-app-stack
+
+services:
+  front-service:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: front-app-container_name
+    ports:
+      - "3001:80"
