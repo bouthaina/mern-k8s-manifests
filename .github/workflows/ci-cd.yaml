@@ -54,8 +54,8 @@ jobs:
         run: docker build -t ${{ env.BACKEND_IMAGE }}:${{ env.BUILD_NUMBER }} ./backend_api
 
       - name: Build frontend image
-        run: docker build -t ${{ env.FRONTEND_IMAGE }}:${{ env.BUILD_NUMBER }} \
-              --build-arg VITE_API_URL=http://api.mern.local.com:31145 ./frontend-app  
+        run: docker build -t ${{ env.FRONTEND_IMAGE }}:${{ env.BUILD_NUMBER }} --build-arg VITE_API_URL=http://api.mern.local.com:31145 ./frontend-app
+
       - name: login to dockerhub
         uses: docker/login-action@v3
         with:
