@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: bouthainabakouch/frontend-app-k8s:v7
-          imagePullPolicy: IfNotPresent
+          image: bouthainabakouch/frontend-app-k8s:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
 
