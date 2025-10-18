@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: bouthainabakouch/backend-api-k8s:latest
+        image: bouthainabakouch/backend-api-k8s:10
         imagePullPolicy: Always
         ports:
         - containerPort: 3002
