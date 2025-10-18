@@ -1,0 +1,12 @@
+# k8s-manifests/kustomization.yaml
+resources:
+  - backend/backend-secret.yaml
+  - backend/backend.yaml
+  - frontend/frontend.yaml
+  - mongodb/mongodb-secret.yaml
+  - mongodb/mongodb-statefulset.yaml
+  - ingress.yaml
+
+commonLabels:
+  project: mern-app
+
