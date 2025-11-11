@@ -6,7 +6,6 @@ resources:
   - mongodb/mongodb-secret.yaml
   - mongodb/mongodb-statefulset.yaml
   - ingress.yaml
-  - networkpolicy.yaml
 commonLabels:
   project: mern-app
 
