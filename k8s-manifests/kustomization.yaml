@@ -5,6 +5,7 @@ resources:
   - frontend/frontend.yaml
   - mongodb/mongodb-secret.yaml
   - mongodb/mongodb-statefulset.yaml
+  - networkpolicy.yaml
   - ingress.yaml
 commonLabels:
   project: mern-app
